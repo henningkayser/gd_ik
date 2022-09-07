@@ -1,13 +1,12 @@
 #include <gd_ik/fk_moveit.hpp>
 #include <gd_ik/frame.hpp>
 
-#include <rclcpp/rclcpp.hpp>
-
 #include <algorithm>
 #include <memory>
 #include <moveit/robot_model/robot_model.h>
 #include <moveit/robot_state/robot_state.h>
 #include <vector>
+
 namespace gd_ik {
 
 auto make_fk_fn(std::shared_ptr<moveit::core::RobotModel const> robot_model,
